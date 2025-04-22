@@ -10,7 +10,7 @@
     <readme>README.md</readme>
     <description>Host library for embedding and managing Blazor microfrontends</description>
     <tags>blazor microfrontends webassembly server host</tags>
-    <repository type="git" url="https://github.com/kevinsamuel/BlazorMicrofrontends" />
+    <repository type="git" url="https://github.com/kevinsamuel/BlazorMicrofrontends" commit="68b0106713d667cdfeb2bf31813480ab057ae3a0" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="BlazorMicrofrontends.Core" version="1.0.0" exclude="Build,Analyzers" />
@@ -29,15 +29,15 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/bin/Release/net8.0/BlazorMicrofrontends.Host.dll" target="lib/net8.0/BlazorMicrofrontends.Host.dll" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/bin/Release/net9.0/BlazorMicrofrontends.Host.dll" target="lib/net9.0/BlazorMicrofrontends.Host.dll" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js" target="staticwebassets/interop.js" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css" target="staticwebassets/microfrontend-host.css" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.BlazorMicrofrontends.Host.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" target="build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.BlazorMicrofrontends.Host.Microsoft.AspNetCore.StaticWebAssets.props" target="build/Microsoft.AspNetCore.StaticWebAssets.props" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.build.BlazorMicrofrontends.Host.props" target="build/BlazorMicrofrontends.Host.props" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.buildMultiTargeting.BlazorMicrofrontends.Host.props" target="buildMultiTargeting/BlazorMicrofrontends.Host.props" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.buildTransitive.BlazorMicrofrontends.Host.props" target="buildTransitive/BlazorMicrofrontends.Host.props" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/README.md" target="/README.md" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/bin/Release/net8.0/BlazorMicrofrontends.Host.dll" target="lib/net8.0/BlazorMicrofrontends.Host.dll" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/bin/Release/net9.0/BlazorMicrofrontends.Host.dll" target="lib/net9.0/BlazorMicrofrontends.Host.dll" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js" target="staticwebassets/interop.js" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css" target="staticwebassets/microfrontend-host.css" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.BlazorMicrofrontends.Host.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" target="build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.BlazorMicrofrontends.Host.Microsoft.AspNetCore.StaticWebAssets.props" target="build/Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.build.BlazorMicrofrontends.Host.props" target="build/BlazorMicrofrontends.Host.props" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.buildMultiTargeting.BlazorMicrofrontends.Host.props" target="buildMultiTargeting/BlazorMicrofrontends.Host.props" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net8.0/staticwebassets/msbuild.buildTransitive.BlazorMicrofrontends.Host.props" target="buildTransitive/BlazorMicrofrontends.Host.props" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/README.md" target="/README.md" />
   </files>
 </package>

@@ -1,0 +1,170 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "interop.i48w2iseca.js",
+      "AssetFile": "interop.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:21:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i48w2iseca"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg="
+        },
+        {
+          "Name": "label",
+          "Value": "interop.js"
+        }
+      ]
+    },
+    {
+      "Route": "interop.js",
+      "AssetFile": "interop.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:21:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg="
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.css",
+      "AssetFile": "microfrontend-host.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:20:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4="
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.m1umsy9bue.css",
+      "AssetFile": "microfrontend-host.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:20:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1umsy9bue"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4="
+        },
+        {
+          "Name": "label",
+          "Value": "microfrontend-host.css"
+        }
+      ]
+    }
+  ]
+}

@@ -10,3 +10,16 @@
 /Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Release/net8.0/refint/BlazorMicrofrontends.Core.dll
 /Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.pdb
 /Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Release/net8.0/ref/BlazorMicrofrontends.Core.dll
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/bin/Release/net8.0/BlazorMicrofrontends.Core.deps.json
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/bin/Release/net8.0/BlazorMicrofrontends.Core.dll
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/bin/Release/net8.0/BlazorMicrofrontends.Core.pdb
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.csproj.AssemblyReference.cache
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.AssemblyInfoInputs.cache
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.AssemblyInfo.cs
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.csproj.CoreCompileInputs.cache
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.sourcelink.json
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.dll
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/refint/BlazorMicrofrontends.Core.dll
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/BlazorMicrofrontends.Core.pdb
+/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/obj/Release/net8.0/ref/BlazorMicrofrontends.Core.dll

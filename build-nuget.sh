@@ -30,5 +30,13 @@ dotnet pack BlazorMicrofrontends.Integration/BlazorMicrofrontends.Integration.cs
 echo "Building BlazorMicrofrontends.AppShell package..."
 dotnet pack BlazorMicrofrontends.AppShell/BlazorMicrofrontends.AppShell.csproj -c Release -o dist
 
+# CLI package
+echo "Building BlazorMicrofrontends.CLI package..."
+dotnet pack BlazorMicrofrontends.CLI/BlazorMicrofrontends.CLI.csproj -c Release -o dist
+
+# Templates package
+echo "Building BlazorMicrofrontends.Templates package..."
+dotnet pack BlazorMicrofrontends.Templates/BlazorMicrofrontends.Templates.csproj -c Release -o dist
+
 echo "NuGet packages created successfully in the 'dist' directory"
 ls -la dist 

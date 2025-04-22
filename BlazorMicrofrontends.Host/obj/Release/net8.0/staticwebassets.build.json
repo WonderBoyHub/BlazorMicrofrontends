@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "tMkEWlvQdXRfw124HMThm4PWvBXFnXRxymjuO2sd8So=",
+  "Hash": "mKaxFRP+SJzB6xqxuSEKkMfdgEdlit02M285Nsyi/UY=",
   "Source": "BlazorMicrofrontends.Host",
   "BasePath": "_content/BlazorMicrofrontends.Host",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Integration/BlazorMicrofrontends.Integration.csproj",
+      "Identity": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Integration/BlazorMicrofrontends.Integration.csproj",
       "Version": 2,
       "Source": "BlazorMicrofrontends.Integration",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "BlazorMicrofrontends.Host/wwwroot",
       "Source": "BlazorMicrofrontends.Host",
-      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/",
       "BasePath": "_content/BlazorMicrofrontends.Host",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "Identity": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js",
       "SourceId": "BlazorMicrofrontends.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/",
       "BasePath": "_content/BlazorMicrofrontends.Host",
       "RelativePath": "interop#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -50,10 +50,10 @@
       "OriginalItemSpec": "wwwroot/interop.js"
     },
     {
-      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "Identity": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
       "SourceId": "BlazorMicrofrontends.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/",
       "BasePath": "_content/BlazorMicrofrontends.Host",
       "RelativePath": "microfrontend-host#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -74,7 +74,7 @@
   "Endpoints": [
     {
       "Route": "interop.i48w2iseca.js",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -119,7 +119,7 @@
     },
     {
       "Route": "interop.js",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -156,7 +156,7 @@
     },
     {
       "Route": "microfrontend-host.css",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -193,7 +193,7 @@
     },
     {
       "Route": "microfrontend-host.m1umsy9bue.css",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
       "Selectors": [],
       "ResponseHeaders": [
         {

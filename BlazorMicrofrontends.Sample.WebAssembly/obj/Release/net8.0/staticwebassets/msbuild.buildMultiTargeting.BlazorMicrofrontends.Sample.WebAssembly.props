@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/BlazorMicrofrontends.Sample.WebAssembly.props" />
+</Project>

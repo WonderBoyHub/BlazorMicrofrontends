@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BlazorMicrofrontends.Templates</id>
+    <version>1.0.0</version>
+    <title>Blazor Microfrontends Templates</title>
+    <authors>BlazorMicrofrontends</authors>
+    <description>Templates for creating Blazor Microfrontends app shells and microfrontends.</description>
+    <tags>dotnet-new templates blazor microfrontends maui</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <repository type="git" commit="68b0106713d667cdfeb2bf31813480ab057ae3a0" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/.template.config/template.json" target="content/Content/AppShell/EmptyMaui/.template.config/template.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/App.xaml" target="content/Content/AppShell/EmptyMaui/App.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/App.xaml.cs" target="content/Content/AppShell/EmptyMaui/App.xaml.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/appsettings.json" target="content/Content/AppShell/EmptyMaui/appsettings.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/AppShellTemplate.csproj" target="content/Content/AppShell/EmptyMaui/AppShellTemplate.csproj" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/EmptyMauiAppShell.csproj" target="content/Content/AppShell/EmptyMaui/EmptyMauiAppShell.csproj" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/Main.razor" target="content/Content/AppShell/EmptyMaui/Main.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/MainLayout.razor" target="content/Content/AppShell/EmptyMaui/MainLayout.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/MainPage.xaml" target="content/Content/AppShell/EmptyMaui/MainPage.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/MainPage.xaml.cs" target="content/Content/AppShell/EmptyMaui/MainPage.xaml.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/MauiProgram.cs" target="content/Content/AppShell/EmptyMaui/MauiProgram.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/Resources/AppIcon/appicon.svg" target="content/Content/AppShell/EmptyMaui/Resources/AppIcon/appicon.svg" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/Resources/AppIcon/appiconfg.svg" target="content/Content/AppShell/EmptyMaui/Resources/AppIcon/appiconfg.svg" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/Resources/Images/dotnet_bot.svg" target="content/Content/AppShell/EmptyMaui/Resources/Images/dotnet_bot.svg" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/Resources/Splash/splash.svg" target="content/Content/AppShell/EmptyMaui/Resources/Splash/splash.svg" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/Resources/Styles/Colors.xaml" target="content/Content/AppShell/EmptyMaui/Resources/Styles/Colors.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/Resources/Styles/Styles.xaml" target="content/Content/AppShell/EmptyMaui/Resources/Styles/Styles.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyMaui/wwwroot/index.html" target="content/Content/AppShell/EmptyMaui/wwwroot/index.html" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/.template.config/template.json" target="content/Content/AppShell/EmptyServer/.template.config/template.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/App.razor" target="content/Content/AppShell/EmptyServer/App.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/appsettings.json" target="content/Content/AppShell/EmptyServer/appsettings.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/AppShellTemplate.csproj" target="content/Content/AppShell/EmptyServer/AppShellTemplate.csproj" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/Pages/Index.razor" target="content/Content/AppShell/EmptyServer/Pages/Index.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/Pages/_Host.cshtml" target="content/Content/AppShell/EmptyServer/Pages/_Host.cshtml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/Program.cs" target="content/Content/AppShell/EmptyServer/Program.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/Shared/MainLayout.razor" target="content/Content/AppShell/EmptyServer/Shared/MainLayout.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyServer/Shared/NavMenu.razor" target="content/Content/AppShell/EmptyServer/Shared/NavMenu.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyWebAssembly/.template.config/template.json" target="content/Content/AppShell/EmptyWebAssembly/.template.config/template.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyWebAssembly/App.razor" target="content/Content/AppShell/EmptyWebAssembly/App.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyWebAssembly/AppShellTemplate.csproj" target="content/Content/AppShell/EmptyWebAssembly/AppShellTemplate.csproj" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyWebAssembly/Program.cs" target="content/Content/AppShell/EmptyWebAssembly/Program.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/EmptyWebAssembly/wwwroot/appsettings.json" target="content/Content/AppShell/EmptyWebAssembly/wwwroot/appsettings.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/.template.config/template.json" target="content/Content/AppShell/SampleMaui/.template.config/template.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/App.xaml" target="content/Content/AppShell/SampleMaui/App.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/App.xaml.cs" target="content/Content/AppShell/SampleMaui/App.xaml.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/appsettings.json" target="content/Content/AppShell/SampleMaui/appsettings.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/AppShell.xaml" target="content/Content/AppShell/SampleMaui/AppShell.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/AppShell.xaml.cs" target="content/Content/AppShell/SampleMaui/AppShell.xaml.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/BlazorPage.xaml" target="content/Content/AppShell/SampleMaui/BlazorPage.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/BlazorPage.xaml.cs" target="content/Content/AppShell/SampleMaui/BlazorPage.xaml.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/IntToBoolConverter.cs" target="content/Content/AppShell/SampleMaui/IntToBoolConverter.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/MainLayout.razor" target="content/Content/AppShell/SampleMaui/MainLayout.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/MainPage.xaml" target="content/Content/AppShell/SampleMaui/MainPage.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/MainPage.xaml.cs" target="content/Content/AppShell/SampleMaui/MainPage.xaml.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/MauiProgram.cs" target="content/Content/AppShell/SampleMaui/MauiProgram.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/MicrofrontendViewer.razor" target="content/Content/AppShell/SampleMaui/MicrofrontendViewer.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/SampleMauiAppShell.csproj" target="content/Content/AppShell/SampleMaui/SampleMauiAppShell.csproj" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/SettingsPage.xaml" target="content/Content/AppShell/SampleMaui/SettingsPage.xaml" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/SettingsPage.xaml.cs" target="content/Content/AppShell/SampleMaui/SettingsPage.xaml.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/AppShell/SampleMaui/wwwroot/index.html" target="content/Content/AppShell/SampleMaui/wwwroot/index.html" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Blazor/.template.config/template.json" target="content/Content/MicroFrontend/Blazor/.template.config/template.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Blazor/BlazorMicrofrontend.csproj" target="content/Content/MicroFrontend/Blazor/BlazorMicrofrontend.csproj" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Blazor/MainComponent.razor" target="content/Content/MicroFrontend/Blazor/MainComponent.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Blazor/microfrontend.json" target="content/Content/MicroFrontend/Blazor/microfrontend.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/BlazorMaui/.template.config/template.json" target="content/Content/MicroFrontend/BlazorMaui/.template.config/template.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/BlazorMaui/BlazorMauiMicrofrontend.csproj" target="content/Content/MicroFrontend/BlazorMaui/BlazorMauiMicrofrontend.csproj" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/BlazorMaui/MainComponent.razor" target="content/Content/MicroFrontend/BlazorMaui/MainComponent.razor" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/BlazorMaui/microfrontend.json" target="content/Content/MicroFrontend/BlazorMaui/microfrontend.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/BlazorMaui/MicrofrontendServiceCollectionExtensions.cs" target="content/Content/MicroFrontend/BlazorMaui/MicrofrontendServiceCollectionExtensions.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/BlazorMaui/NativeService.cs" target="content/Content/MicroFrontend/BlazorMaui/NativeService.cs" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Python/.template.config/template.json" target="content/Content/MicroFrontend/Python/.template.config/template.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Python/app.py" target="content/Content/MicroFrontend/Python/app.py" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Python/django_app/manage.py" target="content/Content/MicroFrontend/Python/django_app/manage.py" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Python/django_app/PythonMicrofrontend/settings.py" target="content/Content/MicroFrontend/Python/django_app/PythonMicrofrontend/settings.py" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Python/microfrontend.json" target="content/Content/MicroFrontend/Python/microfrontend.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/Python/requirements.txt" target="content/Content/MicroFrontend/Python/requirements.txt" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/.template.config/template.json" target="content/Content/MicroFrontend/React/.template.config/template.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/microfrontend.json" target="content/Content/MicroFrontend/React/microfrontend.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/package.json" target="content/Content/MicroFrontend/React/package.json" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/src/App.js" target="content/Content/MicroFrontend/React/src/App.js" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/src/App.tsx" target="content/Content/MicroFrontend/React/src/App.tsx" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/src/components/Counter.tsx" target="content/Content/MicroFrontend/React/src/components/Counter.tsx" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/src/index.js" target="content/Content/MicroFrontend/React/src/index.js" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/src/index.tsx" target="content/Content/MicroFrontend/React/src/index.tsx" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Templates/Content/MicroFrontend/React/tsconfig.json" target="content/Content/MicroFrontend/React/tsconfig.json" />
+  </files>
+</package>

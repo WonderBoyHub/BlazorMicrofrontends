@@ -1,11 +1,11 @@
 {
   "Files": [
     {
-      "Id": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "Id": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js",
       "PackagePath": "staticwebassets/interop.js"
     },
     {
-      "Id": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "Id": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
       "PackagePath": "staticwebassets/microfrontend-host.css"
     },
     {

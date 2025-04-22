@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Templates for creating Blazor Microfrontends app shells and microfrontends.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68b0106713d667cdfeb2bf31813480ab057ae3a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorMicrofrontends.Templates")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorMicrofrontends.Templates")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

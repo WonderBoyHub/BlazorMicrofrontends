@@ -52,9 +52,31 @@ dotnet nuget push dist/BlazorMicrofrontends.Integration.1.0.0.nupkg --api-key YO
 
 # AppShell package
 dotnet nuget push dist/BlazorMicrofrontends.AppShell.1.0.0.nupkg --api-key YOUR_API_KEY --source https://api.nuget.org/v3/index.json
+
+# CLI package
+dotnet nuget push dist/BlazorMicrofrontends.CLI.1.0.0.nupkg --api-key YOUR_API_KEY --source https://api.nuget.org/v3/index.json
+
+# Templates package
+dotnet nuget push dist/BlazorMicrofrontends.Templates.1.0.0.nupkg --api-key YOUR_API_KEY --source https://api.nuget.org/v3/index.json
 ```
 
 Replace `YOUR_API_KEY` with your actual NuGet.org API key.
+
+## Tool Installation (CLI)
+
+After publishing, users can install the CLI tool globally using:
+
+```bash
+dotnet tool install --global BlazorMicrofrontends.CLI
+```
+
+## Template Installation
+
+After publishing, users can install the project templates using:
+
+```bash
+dotnet new install BlazorMicrofrontends.Templates
+```
 
 ## Verifying the Published Packages
 

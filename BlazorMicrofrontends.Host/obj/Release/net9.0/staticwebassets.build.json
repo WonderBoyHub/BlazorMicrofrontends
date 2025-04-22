@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "38NcMJxhcU8hLKFyNyqPfanDAJy/d756G/pteme1LRw=",
+  "Hash": "WvR9P1DvYGOPk2l/0FBEXQGnCPmuP0GhQBh3ThbXuxc=",
   "Source": "BlazorMicrofrontends.Host",
   "BasePath": "_content/BlazorMicrofrontends.Host",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Integration/BlazorMicrofrontends.Integration.csproj",
+      "Identity": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Integration/BlazorMicrofrontends.Integration.csproj",
       "Version": 2,
       "Source": "BlazorMicrofrontends.Integration",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,17 +22,17 @@
     {
       "Name": "BlazorMicrofrontends.Host/wwwroot",
       "Source": "BlazorMicrofrontends.Host",
-      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/",
       "BasePath": "_content/BlazorMicrofrontends.Host",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "Identity": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
       "SourceId": "BlazorMicrofrontends.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/",
       "BasePath": "_content/BlazorMicrofrontends.Host",
       "RelativePath": "interop#[.{fingerprint=i48w2iseca}]?.js.gz",
       "AssetKind": "All",
@@ -40,20 +40,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "Server",
-      "RelatedAsset": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "RelatedAsset": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "jca12ei43c",
       "Integrity": "XbvrRTud+k72Mfxb0vrG8zatbYlvVPD6sgqE1b/ZTG8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js"
+      "OriginalItemSpec": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js"
     },
     {
-      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "Identity": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
       "SourceId": "BlazorMicrofrontends.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/",
       "BasePath": "_content/BlazorMicrofrontends.Host",
       "RelativePath": "microfrontend-host#[.{fingerprint=m1umsy9bue}]?.css.gz",
       "AssetKind": "All",
@@ -61,20 +61,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "Server",
-      "RelatedAsset": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "RelatedAsset": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "8flc1ai9ur",
       "Integrity": "dGCWiLgW0lV3l+PT5Y5IzXeHzPZNvHH9NYD3dCrMhHM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css"
+      "OriginalItemSpec": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css"
     },
     {
-      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "Identity": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js",
       "SourceId": "BlazorMicrofrontends.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/",
       "BasePath": "_content/BlazorMicrofrontends.Host",
       "RelativePath": "interop#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -92,10 +92,10 @@
       "OriginalItemSpec": "wwwroot/interop.js"
     },
     {
-      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "Identity": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
       "SourceId": "BlazorMicrofrontends.Host",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/",
       "BasePath": "_content/BlazorMicrofrontends.Host",
       "RelativePath": "microfrontend-host#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -116,7 +116,7 @@
   "Endpoints": [
     {
       "Route": "interop.i48w2iseca.js",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -179,7 +179,7 @@
     },
     {
       "Route": "interop.i48w2iseca.js",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -224,7 +224,7 @@
     },
     {
       "Route": "interop.i48w2iseca.js.gz",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -277,7 +277,7 @@
     },
     {
       "Route": "interop.js",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -332,7 +332,7 @@
     },
     {
       "Route": "interop.js",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/interop.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -369,7 +369,7 @@
     },
     {
       "Route": "interop.js.gz",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -414,7 +414,7 @@
     },
     {
       "Route": "microfrontend-host.css",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -469,7 +469,7 @@
     },
     {
       "Route": "microfrontend-host.css",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -506,7 +506,7 @@
     },
     {
       "Route": "microfrontend-host.css.gz",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -551,7 +551,7 @@
     },
     {
       "Route": "microfrontend-host.m1umsy9bue.css",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -614,7 +614,7 @@
     },
     {
       "Route": "microfrontend-host.m1umsy9bue.css",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -659,7 +659,7 @@
     },
     {
       "Route": "microfrontend-host.m1umsy9bue.css.gz",
-      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

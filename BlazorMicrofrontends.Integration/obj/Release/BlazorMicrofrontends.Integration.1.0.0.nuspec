@@ -10,7 +10,7 @@
     <readme>README.md</readme>
     <description>Integration components for JavaScript frameworks with Blazor Microfrontends</description>
     <tags>blazor microfrontends javascript react vue angular integration</tags>
-    <repository type="git" url="https://github.com/kevinsamuel/BlazorMicrofrontends" />
+    <repository type="git" url="https://github.com/kevinsamuel/BlazorMicrofrontends" commit="68b0106713d667cdfeb2bf31813480ab057ae3a0" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="BlazorMicrofrontends.Core" version="1.0.0" exclude="Build,Analyzers" />
@@ -25,8 +25,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Integration/bin/Release/net8.0/BlazorMicrofrontends.Integration.dll" target="lib/net8.0/BlazorMicrofrontends.Integration.dll" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Integration/bin/Release/net9.0/BlazorMicrofrontends.Integration.dll" target="lib/net9.0/BlazorMicrofrontends.Integration.dll" />
-    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/README.md" target="/README.md" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Integration/bin/Release/net8.0/BlazorMicrofrontends.Integration.dll" target="lib/net8.0/BlazorMicrofrontends.Integration.dll" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Integration/bin/Release/net9.0/BlazorMicrofrontends.Integration.dll" target="lib/net9.0/BlazorMicrofrontends.Integration.dll" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/README.md" target="/README.md" />
   </files>
 </package>

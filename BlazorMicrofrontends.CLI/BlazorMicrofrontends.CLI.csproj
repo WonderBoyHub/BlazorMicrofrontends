@@ -5,7 +5,22 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>blazor-mf</ToolCommandName>
+    <PackageId>BlazorMicrofrontends.CLI</PackageId>
+    <Title>Blazor Microfrontends CLI Tool</Title>
+    <Authors>Kevin Samuel</Authors>
+    <Description>Command line interface for creating and managing Blazor Microfrontends applications</Description>
+    <PackageTags>blazor;microfrontends;cli;tool;webassembly;server;maui</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/kevinsamuel/BlazorMicrofrontends</RepositoryUrl>
+    <Version>1.0.0</Version>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.1" />

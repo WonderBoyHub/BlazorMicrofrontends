@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BlazorMicrofrontends.AppShell</id>
+    <version>1.0.0</version>
+    <title>Blazor Microfrontends AppShell</title>
+    <authors>Kevin Samuel</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <description>Application shell components for Blazor Microfrontends</description>
+    <tags>blazor microfrontends webassembly server maui shell</tags>
+    <repository type="git" url="https://github.com/kevinsamuel/BlazorMicrofrontends" commit="68b0106713d667cdfeb2bf31813480ab057ae3a0" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="BlazorMicrofrontends.Core" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="BlazorMicrofrontends.Host" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="BlazorMicrofrontends.Integration" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="BlazorMicrofrontends.Core" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="BlazorMicrofrontends.Host" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="BlazorMicrofrontends.Integration" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.AppShell/bin/Release/net8.0/BlazorMicrofrontends.AppShell.dll" target="lib/net8.0/BlazorMicrofrontends.AppShell.dll" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.AppShell/bin/Release/net9.0/BlazorMicrofrontends.AppShell.dll" target="lib/net9.0/BlazorMicrofrontends.AppShell.dll" />
+    <file src="/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/README.md" target="/README.md" />
+  </files>
+</package>

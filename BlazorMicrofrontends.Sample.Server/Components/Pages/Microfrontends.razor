@@ -1,0 +1,124 @@
+@page "/microfrontends"
+@using BlazorMicrofrontends.Core
+@using BlazorMicrofrontends.Host
+@using BlazorMicrofrontends.Integration
+@inject IMicrofrontendLifecycle MicrofrontendLifecycle
+
+<PageTitle>Microfrontend Examples</PageTitle>
+
+<h1>Microfrontend Examples</h1>
+
+<div class="microfrontend-grid">
+    <div class="card">
+        <div class="card-header">
+            <h3>Blazor Server Microfrontend</h3>
+        </div>
+        <div class="card-body">
+            <MicrofrontendHost ModuleId="server-counter" />
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h3>Blazor WebAssembly Microfrontend</h3>
+        </div>
+        <div class="card-body">
+            <MicrofrontendHost ModuleId="wasm-counter" />
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h3>React Microfrontend</h3>
+        </div>
+        <div class="card-body">
+            <JsMicrofrontendHost Module="@_reactModule" Props="@_todoProps" />
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h3>Python Microfrontend (PyScript)</h3>
+        </div>
+        <div class="card-body">
+            <JsMicrofrontendHost Module="@_pythonModule" />
+        </div>
+    </div>
+</div>
+
+<h2 class="mt-4">Registered Microfrontends</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Version</th>
+            <th>Technology</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var module in MicrofrontendLifecycle.GetAllModules())
+        {
+            <tr>
+                <td>@module.ModuleId</td>
+                <td>@module.Name</td>
+                <td>@module.Version</td>
+                <td>@module.Technology</td>
+                <td>@(module.IsInitialized ? "Initialized" : "Not Initialized")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private JsMicrofrontendModule? _reactModule;
+    private JsMicrofrontendModule? _pythonModule;
+    
+    private object _todoProps = new
+    {
+        title = "My React Todo List",
+        items = new[]
+        {
+            new { id = 1, text = "Learn Blazor", completed = true },
+            new { id = 2, text = "Build microfrontends", completed = false },
+            new { id = 3, text = "Create cross-platform integrations", completed = false }
+        }
+    };
+    
+    protected override void OnInitialized()
+    {
+        _reactModule = MicrofrontendLifecycle.GetModule("react-todo") as JsMicrofrontendModule;
+        _pythonModule = MicrofrontendLifecycle.GetModule("python-calculator") as JsMicrofrontendModule;
+    }
+}
+
+<style>
+    .microfrontend-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    
+    .card-header {
+        background-color: #f5f5f5;
+        padding: 0.5rem 1rem;
+    }
+    
+    .card-header h3 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+</style> 

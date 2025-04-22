@@ -1,0 +1,12 @@
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/BlazorMicrofrontends.Core.csproj.AssemblyReference.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/BlazorMicrofrontends.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/BlazorMicrofrontends.Core.AssemblyInfoInputs.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/BlazorMicrofrontends.Core.AssemblyInfo.cs
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/BlazorMicrofrontends.Core.csproj.CoreCompileInputs.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/bin/Debug/net9.0/BlazorMicrofrontends.Core.deps.json
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/bin/Debug/net9.0/BlazorMicrofrontends.Core.dll
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/bin/Debug/net9.0/BlazorMicrofrontends.Core.pdb
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/BlazorMicrofrontends.Core.dll
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/refint/BlazorMicrofrontends.Core.dll
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/BlazorMicrofrontends.Core.pdb
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/obj/Debug/net9.0/ref/BlazorMicrofrontends.Core.dll

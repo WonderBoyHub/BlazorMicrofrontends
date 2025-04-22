@@ -1,0 +1,16 @@
+{
+  "name": "BlazorMauiMicrofrontend",
+  "version": "1.0.0",
+  "description": "A MAUI microfrontend that displays device information",
+  "displayName": "MAUI Device Info",
+  "author": "BlazorMicrofrontends",
+  "entryPoint": "MainComponent",
+  "routes": [
+    {
+      "path": "",
+      "title": "MAUI Device Info"
+    }
+  ],
+  "dependencies": [],
+  "environments": []
+} 

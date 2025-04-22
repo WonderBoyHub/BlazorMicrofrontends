@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleMauiAppShell.SettingsPage"
+             Title="Settings">
+    
+    <VerticalStackLayout Spacing="10" Padding="20">
+        <Label 
+            Text="Application Settings"
+            FontSize="24"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" 
+            Margin="0,0,0,20"/>
+
+        <Frame BorderColor="{StaticResource Primary}" Padding="10" Margin="0,0,0,10">
+            <VerticalStackLayout>
+                <Label Text="Microfrontend Source" FontAttributes="Bold" />
+                <Picker x:Name="SourceTypePicker" SelectedIndexChanged="OnSourceTypeChanged">
+                    <Picker.Items>
+                        <x:String>Local</x:String>
+                        <x:String>Remote</x:String>
+                    </Picker.Items>
+                </Picker>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame BorderColor="{StaticResource Primary}" Padding="10" Margin="0,0,0,10" 
+               IsVisible="{Binding Path=SelectedIndex, Source={x:Reference SourceTypePicker}, Converter={StaticResource IntToBoolConverter}, ConverterParameter=0}">
+            <VerticalStackLayout>
+                <Label Text="Local Path" FontAttributes="Bold" />
+                <Entry x:Name="LocalPathEntry" Placeholder="Enter local path" Text="Microfrontends" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame BorderColor="{StaticResource Primary}" Padding="10" Margin="0,0,0,10"
+               IsVisible="{Binding Path=SelectedIndex, Source={x:Reference SourceTypePicker}, Converter={StaticResource IntToBoolConverter}, ConverterParameter=1}">
+            <VerticalStackLayout>
+                <Label Text="Remote Registry URL" FontAttributes="Bold" />
+                <Entry x:Name="RemoteUrlEntry" Placeholder="Enter remote registry URL" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Save Settings" Clicked="OnSaveSettingsClicked" HorizontalOptions="Center" Margin="0,20,0,0" />
+    </VerticalStackLayout>
+</ContentPage> 

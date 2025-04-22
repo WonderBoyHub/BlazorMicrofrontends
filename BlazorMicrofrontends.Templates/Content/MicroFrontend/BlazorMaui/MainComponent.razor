@@ -1,0 +1,63 @@
+@page "/{**path}"
+@using BlazorMicrofrontends.Microfrontend.Interfaces
+@using Microsoft.Maui.Devices
+@inject IMicrofrontendService MicrofrontendService
+
+<div class="container my-4">
+    <h2>MAUI Microfrontend - @MicrofrontendService.GetName()</h2>
+    
+    <div class="card mb-4">
+        <div class="card-header">
+            <h3 class="card-title">Device Information</h3>
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <label class="fw-bold">Device Type:</label>
+                <span>@DeviceInfo.Current.Idiom</span>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">Platform:</label>
+                <span>@DeviceInfo.Platform</span>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">Manufacturer:</label>
+                <span>@DeviceInfo.Current.Manufacturer</span>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">Model:</label>
+                <span>@DeviceInfo.Current.Model</span>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">Device Name:</label>
+                <span>@DeviceInfo.Current.Name</span>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">Version:</label>
+                <span>@DeviceInfo.Current.VersionString</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Battery Status</h3>
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <label class="fw-bold">Battery Level:</label>
+                <span>@(Battery.Default.ChargeLevel * 100)%</span>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">Battery State:</label>
+                <span>@Battery.Default.State</span>
+            </div>
+            <div class="mb-3">
+                <label class="fw-bold">Power Source:</label>
+                <span>@Battery.Default.PowerSource</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+} 

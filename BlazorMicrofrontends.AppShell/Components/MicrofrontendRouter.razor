@@ -1,0 +1,250 @@
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Routing
+@using BlazorMicrofrontends.Core
+@using BlazorMicrofrontends.Host
+@using BlazorMicrofrontends.AppShell.Services
+@inject IMicrofrontendRegistry MicrofrontendRegistry
+@inject NavigationManager NavigationManager
+
+@if (_content != null)
+{
+    @_content
+}
+
+@code {
+    private RenderFragment? _content;
+    private string _currentUri = string.Empty;
+    private bool _isInitialized = false;
+
+    [Parameter]
+    public string DefaultRoute { get; set; } = string.Empty;
+
+    [Parameter]
+    public RenderFragment<string>? NotFoundContent { get; set; }
+
+    [Parameter]
+    public RouteMode RouteMode { get; set; } = RouteMode.Exact;
+
+    protected override void OnInitialized()
+    {
+        NavigationManager.LocationChanged += OnLocationChanged;
+        _currentUri = NavigationManager.Uri;
+        UpdateContent();
+        _isInitialized = true;
+    }
+
+    protected override void OnParametersSet()
+    {
+        if (_isInitialized)
+        {
+            UpdateContent();
+        }
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        _currentUri = e.Location;
+        UpdateContent();
+    }
+
+    private void UpdateContent()
+    {
+        var path = NavigationManager.ToBaseRelativePath(_currentUri).Trim('/');
+        
+        // If path is empty and we have a default route, use that
+        if (string.IsNullOrEmpty(path) && !string.IsNullOrEmpty(DefaultRoute))
+        {
+            path = DefaultRoute.Trim('/');
+        }
+        
+        // If still empty, show nothing
+        if (string.IsNullOrEmpty(path))
+        {
+            _content = null;
+            StateHasChanged();
+            return;
+        }
+
+        // Get the route components (for parameter extraction)
+        var pathSegments = path.Split('/');
+        string routePath = pathSegments[0];
+        
+        // Try to match by exact path first
+        var matchedMicrofrontend = FindMatchingMicrofrontend(path);
+        
+        // If route mode is Prefix and no exact match, try to match by route prefix
+        if (matchedMicrofrontend == null && RouteMode == RouteMode.Prefix)
+        {
+            matchedMicrofrontend = FindMatchingMicrofrontendByPrefix(routePath);
+        }
+
+        if (matchedMicrofrontend != null)
+        {
+            var parameters = ExtractRouteParameters(path, matchedMicrofrontend);
+            
+            _content = builder =>
+            {
+                builder.OpenComponent<MicrofrontendHost>(0);
+                builder.AddAttribute(1, "ModuleId", matchedMicrofrontend.ModuleId);
+                
+                if (parameters.Count > 0)
+                {
+                    builder.AddAttribute(2, "Parameters", parameters);
+                }
+                
+                builder.CloseComponent();
+            };
+        }
+        else
+        {
+            // No matching route found
+            _content = builder =>
+            {
+                if (NotFoundContent != null)
+                {
+                    builder.AddContent(0, NotFoundContent(path));
+                }
+                else
+                {
+                    builder.OpenElement(0, "div");
+                    builder.AddAttribute(1, "class", "not-found");
+                    builder.AddContent(2, "The requested microfrontend route was not found.");
+                    builder.CloseElement();
+                }
+            };
+        }
+        
+        StateHasChanged();
+    }
+    
+    private IMicrofrontendModule? FindMatchingMicrofrontend(string path)
+    {
+        foreach (var microfrontend in MicrofrontendRegistry.GetMicrofrontends())
+        {
+            foreach (var route in microfrontend.Routes)
+            {
+                // Exact match
+                if (path.Equals(route.Path.Trim('/'), StringComparison.OrdinalIgnoreCase))
+                {
+                    return microfrontend;
+                }
+                
+                // Check for parameterized routes (e.g. "products/{id}")
+                if (IsRouteMatch(path, route.Path.Trim('/')))
+                {
+                    return microfrontend;
+                }
+            }
+        }
+        
+        return null;
+    }
+    
+    private IMicrofrontendModule? FindMatchingMicrofrontendByPrefix(string prefix)
+    {
+        foreach (var microfrontend in MicrofrontendRegistry.GetMicrofrontends())
+        {
+            foreach (var route in microfrontend.Routes)
+            {
+                var routePath = route.Path.Trim('/');
+                
+                // Check if route starts with the prefix
+                if (routePath.StartsWith(prefix, StringComparison.OrdinalIgnoreCase))
+                {
+                    return microfrontend;
+                }
+                
+                // Check for parameterized routes where the first segment matches
+                var routeSegments = routePath.Split('/');
+                if (routeSegments.Length > 0)
+                {
+                    var firstSegment = routeSegments[0];
+                    if (firstSegment.StartsWith("{") && firstSegment.EndsWith("}"))
+                    {
+                        // This is a parameterized route, it potentially matches anything
+                        return microfrontend;
+                    }
+                }
+            }
+        }
+        
+        return null;
+    }
+    
+    private bool IsRouteMatch(string path, string routeTemplate)
+    {
+        // Simple parameter matching - sufficient for basic use cases
+        // A more robust implementation would use a proper route pattern matcher
+        
+        var pathSegments = path.Split('/');
+        var routeSegments = routeTemplate.Split('/');
+        
+        if (pathSegments.Length != routeSegments.Length)
+        {
+            return false;
+        }
+        
+        for (int i = 0; i < routeSegments.Length; i++)
+        {
+            var routeSegment = routeSegments[i];
+            var pathSegment = pathSegments[i];
+            
+            // If it's a parameter, it matches anything
+            if (routeSegment.StartsWith("{") && routeSegment.EndsWith("}"))
+            {
+                continue;
+            }
+            
+            // Otherwise it must match exactly
+            if (!string.Equals(routeSegment, pathSegment, StringComparison.OrdinalIgnoreCase))
+            {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+    
+    private Dictionary<string, object> ExtractRouteParameters(string path, IMicrofrontendModule microfrontend)
+    {
+        var parameters = new Dictionary<string, object>();
+        
+        // Add the full path as a parameter
+        parameters["Path"] = path;
+        
+        // Find the matching route template
+        string? matchingTemplate = null;
+        foreach (var route in microfrontend.Routes)
+        {
+            if (IsRouteMatch(path, route.Path.Trim('/')))
+            {
+                matchingTemplate = route.Path.Trim('/');
+                break;
+            }
+        }
+        
+        if (matchingTemplate != null)
+        {
+            var pathSegments = path.Split('/');
+            var templateSegments = matchingTemplate.Split('/');
+            
+            for (int i = 0; i < templateSegments.Length; i++)
+            {
+                var templateSegment = templateSegments[i];
+                
+                if (templateSegment.StartsWith("{") && templateSegment.EndsWith("}"))
+                {
+                    var paramName = templateSegment.Substring(1, templateSegment.Length - 2);
+                    parameters[paramName] = pathSegments[i];
+                }
+            }
+        }
+        
+        return parameters;
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+} 

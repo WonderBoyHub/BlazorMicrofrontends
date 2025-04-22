@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "PackagePath": "staticwebassets/interop.js"
+    },
+    {
+      "Id": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "PackagePath": "staticwebassets/microfrontend-host.css"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.BlazorMicrofrontends.Host.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.BlazorMicrofrontends.Host.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.build.BlazorMicrofrontends.Host.props",
+      "PackagePath": "build\\BlazorMicrofrontends.Host.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildMultiTargeting.BlazorMicrofrontends.Host.props",
+      "PackagePath": "buildMultiTargeting\\BlazorMicrofrontends.Host.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildTransitive.BlazorMicrofrontends.Host.props",
+      "PackagePath": "buildTransitive\\BlazorMicrofrontends.Host.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

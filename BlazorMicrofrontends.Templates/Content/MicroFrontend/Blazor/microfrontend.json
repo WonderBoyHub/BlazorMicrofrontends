@@ -1,0 +1,16 @@
+{
+  "name": "BlazorMicrofrontend",
+  "version": "1.0.0",
+  "description": "A Blazor microfrontend",
+  "displayName": "Blazor Microfrontend",
+  "author": "Your Name",
+  "entryPoint": "MainComponent",
+  "routes": [
+    {
+      "path": "blazor-microfrontend",
+      "title": "Blazor Microfrontend"
+    }
+  ],
+  "dependencies": [],
+  "environments": ["web", "desktop"]
+} 

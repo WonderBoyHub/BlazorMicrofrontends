@@ -1,0 +1,6 @@
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/obj/Release/net8.0/BlazorMicrofrontends.Sample.Server.csproj.AssemblyReference.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/obj/Release/net8.0/BlazorMicrofrontends.Sample.Server.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/obj/Release/net8.0/BlazorMicrofrontends.Sample.Server.AssemblyInfoInputs.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/obj/Release/net8.0/BlazorMicrofrontends.Sample.Server.AssemblyInfo.cs
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/obj/Release/net8.0/BlazorMicrofrontends.Sample.Server.csproj.CoreCompileInputs.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/obj/Release/net8.0/BlazorMicrofrontends.Sample.Server.MvcApplicationPartsAssemblyInfo.cache

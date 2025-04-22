@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/obj/Debug/net8.0/scopedcss/projectbundle/BlazorMicrofrontends.Sample.Server.bundle.scp.css",
+      "PackagePath": "staticwebassets/BlazorMicrofrontends.Sample.Server.qdoldv5jzo.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Sample.Server/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BlazorMicrofrontends.Sample.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.BlazorMicrofrontends.Sample.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.BlazorMicrofrontends.Sample.Server.props",
+      "PackagePath": "build\\BlazorMicrofrontends.Sample.Server.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BlazorMicrofrontends.Sample.Server.props",
+      "PackagePath": "buildMultiTargeting\\BlazorMicrofrontends.Sample.Server.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BlazorMicrofrontends.Sample.Server.props",
+      "PackagePath": "buildTransitive\\BlazorMicrofrontends.Sample.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,25 @@
+# Core dependency for Blazor Microfrontends integration
+blazor-microfrontends-python==1.0.0
+
+#if (Framework == "Flask")
+# Flask dependencies
+flask==2.3.3
+flask-cors==4.0.0
+#endif
+
+#if (Framework == "Django")
+# Django dependencies
+django==4.2.5
+djangorestframework==3.14.0
+django-cors-headers==4.2.0
+#endif
+
+#if (IncludeDatabase && DatabaseType == "PostgreSQL")
+# PostgreSQL dependencies
+psycopg2-binary==2.9.7
+#endif
+
+#if (IncludeDatabase)
+# ORM
+sqlalchemy==2.0.20
+#endif 

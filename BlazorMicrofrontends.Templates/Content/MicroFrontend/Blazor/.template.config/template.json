@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "BlazorMicrofrontends",
+  "classifications": [ "Web", "Blazor", "Microfrontend" ],
+  "identity": "BlazorMicrofrontends.MicroFrontend.Blazor",
+  "name": "Blazor Microfrontends: Blazor Microfrontend",
+  "shortName": "blazormfe-blazor",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "BlazorMicrofrontend",
+  "preferNameDirectory": true
+} 

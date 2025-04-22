@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#512BD4" /> <!-- .NET MAUI Purple -->
+      <stop offset="100%" stop-color="#0078D7" /> <!-- Blazor Blue -->
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rectangle -->
+  <rect width="800" height="200" fill="url(#bg-gradient)" rx="10" ry="10" />
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="150" r="40" fill="#ffffff" fill-opacity="0.1" />
+  <circle cx="700" cy="50" r="60" fill="#ffffff" fill-opacity="0.1" />
+  
+  <!-- Logo elements -->
+  <g transform="translate(70, 100)">
+    <!-- .NET MAUI representation -->
+    <rect x="0" y="-30" width="60" height="60" rx="10" ry="10" fill="#512BD4" />
+    <text x="30" y="10" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">MAUI</text>
+  </g>
+  
+  <!-- Connecting element -->
+  <line x1="160" y1="100" x2="240" y2="100" stroke="#ffffff" stroke-width="3" stroke-dasharray="10,5" />
+  
+  <!-- Blazor representation -->
+  <g transform="translate(270, 100)">
+    <rect x="0" y="-30" width="60" height="60" rx="10" ry="10" fill="#0078D7" />
+    <text x="30" y="10" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Blazor</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Blazor Microfrontends</text>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">MAUI Integration Guide</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="150" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Build powerful cross-platform applications with microfrontends</text>
+</svg> 

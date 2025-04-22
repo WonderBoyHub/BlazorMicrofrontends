@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "microfrontend-host.4avcjs2d1s.css",
+      "AssetFile": "microfrontend-host.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XGwCISKw7NRT8uCbZtz5GLrm4owIK68wKNCTDOtQ30Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 18:25:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4avcjs2d1s"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XGwCISKw7NRT8uCbZtz5GLrm4owIK68wKNCTDOtQ30Q="
+        },
+        {
+          "Name": "label",
+          "Value": "microfrontend-host.css"
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.css",
+      "AssetFile": "microfrontend-host.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XGwCISKw7NRT8uCbZtz5GLrm4owIK68wKNCTDOtQ30Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 18:25:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XGwCISKw7NRT8uCbZtz5GLrm4owIK68wKNCTDOtQ30Q="
+        }
+      ]
+    }
+  ]
+}

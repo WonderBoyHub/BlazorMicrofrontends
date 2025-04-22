@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ZzvrWjwjoJoEcUp0CGqx7BFZaX7Mw0rOOCoUeC0HeXY=",
+  "Source": "BlazorMicrofrontends.Integration",
+  "BasePath": "_content/BlazorMicrofrontends.Integration",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

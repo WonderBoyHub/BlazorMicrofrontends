@@ -1,0 +1,165 @@
+@using Microsoft.JSInterop
+@using Microsoft.AspNetCore.Components
+@using BlazorMicrofrontends.Core
+@implements IDisposable
+
+<div id="@ContainerId" class="js-microfrontend-container @CssClass">
+    @if (_loading)
+    {
+        <div class="js-microfrontend-loading">
+            @if (LoadingTemplate != null)
+            {
+                @LoadingTemplate
+            }
+            else
+            {
+                <div class="js-microfrontend-loading-default">Loading...</div>
+            }
+        </div>
+    }
+    else if (_error)
+    {
+        <div class="js-microfrontend-error">
+            @if (ErrorTemplate != null)
+            {
+                @ErrorTemplate(_errorMessage)
+            }
+            else
+            {
+                <div class="js-microfrontend-error-default">@_errorMessage</div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private bool _loading = true;
+    private bool _error = false;
+    private string _errorMessage = string.Empty;
+    private JsMicrofrontendModule? _module;
+    
+    /// <summary>
+    /// Gets or sets the JS microfrontend module to render.
+    /// </summary>
+    [Parameter]
+    public JsMicrofrontendModule? Module
+    {
+        get => _module;
+        set
+        {
+            if (_module != value)
+            {
+                // If we had a previous module, unmount it
+                if (_module != null && _module.IsInitialized)
+                {
+                    Task.Run(async () => await _module.UnmountAsync()).GetAwaiter().GetResult();
+                }
+                
+                _module = value;
+                StateHasChanged();
+                
+                // If we have a new module, mount it after render
+                if (_module != null)
+                {
+                    InvokeAsync(async () => await MountModuleAsync());
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    /// Gets or sets the ID for the container element.
+    /// </summary>
+    [Parameter]
+    public string ContainerId { get; set; } = $"js-microfrontend-{Guid.NewGuid():N}";
+    
+    /// <summary>
+    /// Gets or sets additional CSS classes for the container.
+    /// </summary>
+    [Parameter]
+    public string CssClass { get; set; } = string.Empty;
+    
+    /// <summary>
+    /// Gets or sets the props to pass to the JavaScript component.
+    /// </summary>
+    [Parameter]
+    public object? Props { get; set; }
+    
+    /// <summary>
+    /// Gets or sets the template to display while loading the microfrontend.
+    /// </summary>
+    [Parameter]
+    public RenderFragment? LoadingTemplate { get; set; }
+    
+    /// <summary>
+    /// Gets or sets the template to display if an error occurs loading the microfrontend.
+    /// </summary>
+    [Parameter]
+    public RenderFragment<string>? ErrorTemplate { get; set; }
+    
+    /// <summary>
+    /// Event raised when the microfrontend is mounted.
+    /// </summary>
+    [Parameter]
+    public EventCallback OnMounted { get; set; }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        if (_module != null)
+        {
+            await MountModuleAsync();
+        }
+        else
+        {
+            _loading = false;
+        }
+    }
+    
+    protected override async Task OnParametersSetAsync()
+    {
+        if (_module != null && Props != null)
+        {
+            await MountModuleAsync();
+        }
+    }
+    
+    private async Task MountModuleAsync()
+    {
+        if (_module == null)
+            return;
+        
+        try
+        {
+            _loading = true;
+            _error = false;
+            StateHasChanged();
+            
+            if (!_module.IsInitialized)
+            {
+                await _module.InitializeAsync();
+            }
+            
+            await _module.MountAsync(Props);
+            
+            await OnMounted.InvokeAsync();
+        }
+        catch (Exception ex)
+        {
+            _error = true;
+            _errorMessage = ex.Message;
+        }
+        finally
+        {
+            _loading = false;
+            StateHasChanged();
+        }
+    }
+    
+    public void Dispose()
+    {
+        if (_module != null && _module.IsInitialized)
+        {
+            Task.Run(async () => await _module.UnmountAsync()).GetAwaiter().GetResult();
+        }
+    }
+} 

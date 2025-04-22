@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "BlazorMicrofrontends",
+  "classifications": [ "Web", "React", "JavaScript", "Microfrontend" ],
+  "identity": "BlazorMicrofrontends.MicroFrontend.React",
+  "name": "Blazor Microfrontends: React Microfrontend",
+  "shortName": "blazormfe-react",
+  "tags": {
+    "language": "JavaScript",
+    "type": "project"
+  },
+  "sourceName": "ReactMicrofrontend",
+  "preferNameDirectory": true,
+  "symbols": {
+    "Language": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "JavaScript",
+          "description": "Use JavaScript"
+        },
+        {
+          "choice": "TypeScript",
+          "description": "Use TypeScript"
+        }
+      ],
+      "defaultValue": "JavaScript",
+      "description": "The language to use for the React microfrontend"
+    },
+    "UseJSX": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "description": "Whether to use JSX/TSX syntax"
+    },
+    "CSSFramework": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "Bootstrap",
+          "description": "Use Bootstrap CSS framework"
+        },
+        {
+          "choice": "TailwindCSS",
+          "description": "Use TailwindCSS framework"
+        },
+        {
+          "choice": "None",
+          "description": "No CSS framework"
+        }
+      ],
+      "defaultValue": "Bootstrap",
+      "description": "The CSS framework to use"
+    }
+  }
+} 

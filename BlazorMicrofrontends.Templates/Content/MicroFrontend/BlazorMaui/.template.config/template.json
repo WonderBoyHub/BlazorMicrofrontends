@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "BlazorMicrofrontends",
+  "classifications": [ "Web", "Blazor", "MAUI", "Microfrontend" ],
+  "identity": "BlazorMicrofrontends.Templates.MicroFrontend.BlazorMaui",
+  "name": "Blazor Microfrontends: MAUI Microfrontend",
+  "shortName": "blazormfe-maui",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "BlazorMauiMicrofrontend",
+  "preferNameDirectory": true
+} 

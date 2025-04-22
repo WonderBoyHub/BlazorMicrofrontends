@@ -1,0 +1,11 @@
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/bin/Debug/net8.0/BlazorMicrofrontends.Templates.deps.json
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/bin/Debug/net8.0/BlazorMicrofrontends.Templates.dll
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/bin/Debug/net8.0/BlazorMicrofrontends.Templates.pdb
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/obj/Debug/net8.0/BlazorMicrofrontends.Templates.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/obj/Debug/net8.0/BlazorMicrofrontends.Templates.AssemblyInfoInputs.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/obj/Debug/net8.0/BlazorMicrofrontends.Templates.AssemblyInfo.cs
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/obj/Debug/net8.0/BlazorMicrofrontends.Templates.csproj.CoreCompileInputs.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/obj/Debug/net8.0/BlazorMicrofrontends.Templates.dll
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/obj/Debug/net8.0/refint/BlazorMicrofrontends.Templates.dll
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/obj/Debug/net8.0/BlazorMicrofrontends.Templates.pdb
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Templates/obj/Debug/net8.0/ref/BlazorMicrofrontends.Templates.dll

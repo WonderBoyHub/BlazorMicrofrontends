@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "6NEVx3sOPvc=",
+  "success": true,
+  "projectFilePath": "/Users/kevinsamuelhougesen/Documents/GitHub/BlazorMicrofrontends/BlazorMicrofrontends.Core/BlazorMicrofrontends.Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/kevinsamuelhougesen/Documents/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/kevinsamuelhougesen/Documents/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/kevinsamuelhougesen/Documents/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
+    "/Users/kevinsamuelhougesen/Documents/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

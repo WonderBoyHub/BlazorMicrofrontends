@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BlazorMicrofrontends.Core</id>
+    <version>1.0.0</version>
+    <title>Blazor Microfrontends Core</title>
+    <authors>Kevin Samuel</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <readme>README.md</readme>
+    <description>Core library for building composable microfrontend applications with Blazor</description>
+    <tags>blazor microfrontends webassembly server maui</tags>
+    <repository type="git" url="https://github.com/kevinsamuel/BlazorMicrofrontends" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/bin/Release/net8.0/BlazorMicrofrontends.Core.dll" target="lib/net8.0/BlazorMicrofrontends.Core.dll" />
+    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core/bin/Release/net9.0/BlazorMicrofrontends.Core.dll" target="lib/net9.0/BlazorMicrofrontends.Core.dll" />
+    <file src="/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/README.md" target="/README.md" />
+  </files>
+</package>

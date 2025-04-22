@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <Title>Blazor Microfrontends AppShell</Title>
+    <Description>Application shell components for Blazor Microfrontends</Description>
+    <Authors>Kevin Samuel</Authors>
+    <PackageId>BlazorMicrofrontends.AppShell</PackageId>
+    <PackageTags>blazor;microfrontends;webassembly;server;maui;shell</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/kevinsamuel/BlazorMicrofrontends</RepositoryUrl>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorMicrofrontends.Core\BlazorMicrofrontends.Core.csproj" />
+    <ProjectReference Include="..\BlazorMicrofrontends.Host\BlazorMicrofrontends.Host.csproj" />
+    <ProjectReference Include="..\BlazorMicrofrontends.Integration\BlazorMicrofrontends.Integration.csproj" />
+  </ItemGroup>
+
+</Project> 

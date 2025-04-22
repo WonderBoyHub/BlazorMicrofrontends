@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/BlazorMicrofrontends.Host/interop.i48w2iseca.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\interop.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"i48w2iseca"},{"Name":"integrity","Value":"sha256-IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg="},{"Name":"label","Value":"_content/BlazorMicrofrontends.Host/interop.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3045"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 21:21:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BlazorMicrofrontends.Host/interop.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\interop.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3045"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 21:21:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BlazorMicrofrontends.Host/microfrontend-host.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\microfrontend-host.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1693"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 21:20:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BlazorMicrofrontends.Host/microfrontend-host.m1umsy9bue.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\microfrontend-host.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m1umsy9bue"},{"Name":"integrity","Value":"sha256-mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4="},{"Name":"label","Value":"_content/BlazorMicrofrontends.Host/microfrontend-host.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1693"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 22 Apr 2025 21:20:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

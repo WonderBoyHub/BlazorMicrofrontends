@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/BlazorMicrofrontends.Host.props" />
+</Project>

@@ -1,0 +1,16 @@
+{
+  "name": "ReactMicrofrontend",
+  "version": "1.0.0",
+  "description": "A React microfrontend",
+  "displayName": "React Microfrontend",
+  "author": "Your Name",
+  "entryPoint": "main.js",
+  "routes": [
+    {
+      "path": "react-microfrontend",
+      "title": "React Microfrontend"
+    }
+  ],
+  "dependencies": [],
+  "environments": ["web"]
+} 

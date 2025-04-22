@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Blazor Microfrontends",
+  "classifications": [ "Web", "Blazor", "MAUI" ],
+  "identity": "BlazorMicrofrontends.Templates.AppShell.EmptyMaui",
+  "name": "Blazor Microfrontends App Shell (MAUI - Empty)",
+  "shortName": "blazormfe-maui-empty",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "AppShellTemplate",
+  "preferNameDirectory": true,
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net8.0-android",
+          "description": "Target Android"
+        },
+        {
+          "choice": "net8.0-ios",
+          "description": "Target iOS"
+        },
+        {
+          "choice": "net8.0-maccatalyst",
+          "description": "Target Mac Catalyst"
+        },
+        {
+          "choice": "net8.0-windows10.0.19041.0",
+          "description": "Target Windows"
+        }
+      ],
+      "defaultValue": "net8.0-android;net8.0-ios;net8.0-maccatalyst;net8.0-windows10.0.19041.0",
+      "description": "The target framework for the project."
+    }
+  }
+} 

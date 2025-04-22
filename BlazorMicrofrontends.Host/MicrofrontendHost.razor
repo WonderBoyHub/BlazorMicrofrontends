@@ -1,0 +1,236 @@
+@using BlazorMicrofrontends.Core
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Rendering
+@using BlazorMicrofrontends.Integration
+@inherits ComponentBase
+@inject IMicrofrontendLifecycle Lifecycle
+@implements IAsyncDisposable
+
+<div class="microfrontend-host @_hostCssClass" id="@_hostId">
+    @if (_loading)
+    {
+        <div class="microfrontend-loading">
+            @if (LoadingTemplate != null)
+            {
+                @LoadingTemplate
+            }
+            else
+            {
+                <div class="microfrontend-loading-default">Loading...</div>
+            }
+        </div>
+    }
+    else if (_error)
+    {
+        <div class="microfrontend-error">
+            @if (ErrorTemplate != null)
+            {
+                @ErrorTemplate(_errorMessage)
+            }
+            else
+            {
+                <div class="microfrontend-error-default">@_errorMessage</div>
+            }
+        </div>
+    }
+    else if (_content != null)
+    {
+        @_content
+    }
+</div>
+
+@code {
+    private string _hostId = $"microfrontend-host-{Guid.NewGuid():N}";
+    private string _hostCssClass = string.Empty;
+    private bool _loading = true;
+    private bool _error = false;
+    private string _errorMessage = string.Empty;
+    private RenderFragment? _content;
+    private IMicrofrontendModule? _module;
+    private JsMicrofrontendModule? _jsModule; // Track the JS module for cleanup
+    
+    /// <summary>
+    /// Gets or sets the ID of the microfrontend module to load.
+    /// </summary>
+    [Parameter]
+    public string ModuleId { get; set; } = string.Empty;
+    
+    /// <summary>
+    /// Gets or sets the CSS class for the host container.
+    /// </summary>
+    [Parameter]
+    public string HostCssClass { get; set; } = string.Empty;
+    
+    /// <summary>
+    /// Gets or sets the template to display while loading the microfrontend.
+    /// </summary>
+    [Parameter]
+    public RenderFragment? LoadingTemplate { get; set; }
+    
+    /// <summary>
+    /// Gets or sets the template to display if an error occurs loading the microfrontend.
+    /// </summary>
+    [Parameter]
+    public RenderFragment<string>? ErrorTemplate { get; set; }
+    
+    /// <summary>
+    /// Event raised when the microfrontend is loaded.
+    /// </summary>
+    [Parameter]
+    public EventCallback<IMicrofrontendModule> OnModuleLoaded { get; set; }
+    
+    /// <summary>
+    /// Parameters to pass to the component.
+    /// </summary>
+    [Parameter]
+    public IDictionary<string, object>? Parameters { get; set; }
+    
+    /// <summary>
+    /// Gets or sets the child content for the host.
+    /// </summary>
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+    
+    protected override void OnParametersSet()
+    {
+        _hostCssClass = HostCssClass;
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadMicrofrontendAsync();
+    }
+    
+    protected override async Task OnParametersSetAsync()
+    {
+        if (ModuleId != null && (_module == null || _module.ModuleId != ModuleId))
+        {
+            // Clean up previous module if it was a JS module
+            if (_jsModule != null)
+            {
+                await CleanupJsModuleAsync();
+            }
+            
+            await LoadMicrofrontendAsync();
+        }
+    }
+    
+    private async Task LoadMicrofrontendAsync()
+    {
+        if (string.IsNullOrEmpty(ModuleId))
+        {
+            _content = ChildContent;
+            _loading = false;
+            return;
+        }
+        
+        try
+        {
+            _loading = true;
+            _error = false;
+            
+            var module = Lifecycle.GetModule(ModuleId);
+            if (module == null)
+            {
+                throw new InvalidOperationException($"No microfrontend module with ID '{ModuleId}' was found.");
+            }
+            
+            _module = module;
+            
+            if (!_module.IsInitialized)
+            {
+                await Lifecycle.InitializeModuleAsync(ModuleId);
+            }
+            
+            // Render content based on module type
+            _content = module switch
+            {
+                BlazorMicrofrontendModule blazorModule => BuildBlazorComponent(blazorModule),
+                JsMicrofrontendModule jsModule => BuildJsComponent(jsModule),
+                _ => builder => {
+                    builder.OpenElement(0, "div");
+                    builder.AddAttribute(1, "class", "microfrontend-unsupported-type");
+                    builder.AddContent(2, $"Unsupported microfrontend type: {module.GetType().Name}");
+                    builder.CloseElement();
+                }
+            };
+            
+            await OnModuleLoaded.InvokeAsync(_module);
+        }
+        catch (Exception ex)
+        {
+            _error = true;
+            _errorMessage = ex.Message;
+        }
+        finally
+        {
+            _loading = false;
+            StateHasChanged();
+        }
+    }
+    
+    private RenderFragment BuildBlazorComponent(BlazorMicrofrontendModule module)
+    {
+        return builder =>
+        {
+            // Create the component instance based on its type
+            builder.OpenComponent(0, module.ComponentType);
+            
+            // Add parameters if any were provided
+            if (Parameters != null)
+            {
+                int sequence = 1;
+                foreach (var parameter in Parameters)
+                {
+                    builder.AddAttribute(sequence++, parameter.Key, parameter.Value);
+                }
+            }
+            
+            // Set the render mode for the component if specified (for Blazor Web/WASM)
+            if (module.RenderMode != null)
+            {
+                builder.AddComponentRenderMode(module.RenderMode);
+            }
+            
+            builder.CloseComponent();
+        };
+    }
+    
+    private RenderFragment BuildJsComponent(JsMicrofrontendModule module)
+    {
+        // Save the JS module for cleanup
+        _jsModule = module;
+        
+        return builder =>
+        {
+            builder.OpenElement(0, "div");
+            builder.AddAttribute(1, "id", module.ElementId);
+            builder.AddAttribute(2, "class", "js-microfrontend-container");
+            builder.CloseElement();
+            
+            // The actual mounting happens via JS interop when the component is initialized
+            _ = module.MountAsync(Parameters);
+        };
+    }
+    
+    private async Task CleanupJsModuleAsync()
+    {
+        if (_jsModule != null)
+        {
+            try
+            {
+                await _jsModule.UnmountAsync();
+                _jsModule = null;
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error cleaning up JS module: {ex.Message}");
+            }
+        }
+    }
+    
+    public async ValueTask DisposeAsync()
+    {
+        await CleanupJsModuleAsync();
+    }
+} 

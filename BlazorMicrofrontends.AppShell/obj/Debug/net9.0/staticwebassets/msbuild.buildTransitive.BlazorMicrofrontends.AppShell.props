@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/BlazorMicrofrontends.AppShell.props" />
+</Project>

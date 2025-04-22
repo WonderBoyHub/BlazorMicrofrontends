@@ -1,0 +1,109 @@
+@using BlazorMicrofrontends.Core
+@using Microsoft.AspNetCore.Components
+@using Microsoft.JSInterop
+@using System.Text.Json
+@using BlazorMicrofrontends.Integration
+@using BlazorMicrofrontends.AppShell.Services
+@inject IMicrofrontendRegistry MicrofrontendRegistry
+@inject IJSRuntime JSRuntime
+@implements IAsyncDisposable
+
+<div id="microfrontend-scripts-container" style="display: none;"></div>
+
+@code {
+    private IJSObjectReference? _module;
+    private List<string> _loadedScripts = new();
+    private List<string> _loadedStyles = new();
+    private DotNetObjectReference<MicrofrontendScriptsLoader>? _dotnetReference;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _dotnetReference = DotNetObjectReference.Create(this);
+        
+        try
+        {
+            _module = await JSRuntime.InvokeAsync<IJSObjectReference>(
+                "import", "./_content/BlazorMicrofrontends.Host/interop.js");
+                
+            await _module.InvokeVoidAsync("setupErrorHandler", _dotnetReference);
+            
+            await LoadMicrofrontendResourcesAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error initializing MicrofrontendScriptsLoader: {ex.Message}");
+        }
+    }
+
+    private async Task LoadMicrofrontendResourcesAsync()
+    {
+        foreach (var microfrontend in MicrofrontendRegistry.GetMicrofrontends())
+        {
+            if (microfrontend is JsMicrofrontendModule jsModule)
+            {
+                // Load JavaScript
+                if (!string.IsNullOrEmpty(jsModule.ScriptUrl) && !_loadedScripts.Contains(jsModule.ScriptUrl))
+                {
+                    try
+                    {
+                        await _module!.InvokeVoidAsync(
+                            "loadScript", 
+                            jsModule.ScriptUrl, 
+                            true, 
+                            $"mf-script-{jsModule.ModuleId}");
+                            
+                        _loadedScripts.Add(jsModule.ScriptUrl);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.Error.WriteLine($"Error loading script {jsModule.ScriptUrl}: {ex.Message}");
+                    }
+                }
+
+                // Load CSS
+                if (!string.IsNullOrEmpty(jsModule.CssUrl) && !_loadedStyles.Contains(jsModule.CssUrl))
+                {
+                    try
+                    {
+                        await _module!.InvokeVoidAsync(
+                            "loadCss", 
+                            jsModule.CssUrl, 
+                            $"mf-style-{jsModule.ModuleId}");
+                            
+                        _loadedStyles.Add(jsModule.CssUrl);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.Error.WriteLine($"Error loading stylesheet {jsModule.CssUrl}: {ex.Message}");
+                    }
+                }
+            }
+        }
+    }
+    
+    [JSInvokable]
+    public void OnJsError(object errorInfo)
+    {
+        // This method can be called from JavaScript when errors occur
+        Console.Error.WriteLine($"JavaScript error in microfrontend: {JsonSerializer.Serialize(errorInfo)}");
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        // Dispose of the JS module
+        if (_module != null)
+        {
+            try
+            {
+                await _module.DisposeAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error disposing JS module: {ex.Message}");
+            }
+        }
+        
+        // Dispose of the DotNet reference
+        _dotnetReference?.Dispose();
+    }
+} 

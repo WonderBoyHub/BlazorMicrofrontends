@@ -1,0 +1,6 @@
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_BlazorMicrofrontends.Core.Tests
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core.Tests/obj/Debug/net8.0/BlazorMicrofrontends.Core.Tests.csproj.AssemblyReference.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core.Tests/obj/Debug/net8.0/BlazorMicrofrontends.Core.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core.Tests/obj/Debug/net8.0/BlazorMicrofrontends.Core.Tests.AssemblyInfoInputs.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core.Tests/obj/Debug/net8.0/BlazorMicrofrontends.Core.Tests.AssemblyInfo.cs
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Core.Tests/obj/Debug/net8.0/BlazorMicrofrontends.Core.Tests.csproj.CoreCompileInputs.cache

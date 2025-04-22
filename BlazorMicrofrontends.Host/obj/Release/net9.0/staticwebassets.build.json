@@ -1,0 +1,714 @@
+{
+  "Version": 1,
+  "Hash": "38NcMJxhcU8hLKFyNyqPfanDAJy/d756G/pteme1LRw=",
+  "Source": "BlazorMicrofrontends.Host",
+  "BasePath": "_content/BlazorMicrofrontends.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Integration/BlazorMicrofrontends.Integration.csproj",
+      "Version": 2,
+      "Source": "BlazorMicrofrontends.Integration",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "TargetFramework=net9.0",
+      "AdditionalPublishPropertiesToRemove": "RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "TargetFramework=net9.0",
+      "AdditionalBuildPropertiesToRemove": "RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BlazorMicrofrontends.Host/wwwroot",
+      "Source": "BlazorMicrofrontends.Host",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "BasePath": "_content/BlazorMicrofrontends.Host",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "SourceId": "BlazorMicrofrontends.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/",
+      "BasePath": "_content/BlazorMicrofrontends.Host",
+      "RelativePath": "interop#[.{fingerprint=i48w2iseca}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "Server",
+      "RelatedAsset": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "jca12ei43c",
+      "Integrity": "XbvrRTud+k72Mfxb0vrG8zatbYlvVPD6sgqE1b/ZTG8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js"
+    },
+    {
+      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "SourceId": "BlazorMicrofrontends.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/",
+      "BasePath": "_content/BlazorMicrofrontends.Host",
+      "RelativePath": "microfrontend-host#[.{fingerprint=m1umsy9bue}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "Server",
+      "RelatedAsset": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "8flc1ai9ur",
+      "Integrity": "dGCWiLgW0lV3l+PT5Y5IzXeHzPZNvHH9NYD3dCrMhHM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css"
+    },
+    {
+      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "SourceId": "BlazorMicrofrontends.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "BasePath": "_content/BlazorMicrofrontends.Host",
+      "RelativePath": "interop#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "Server",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i48w2iseca",
+      "Integrity": "IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/interop.js"
+    },
+    {
+      "Identity": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "SourceId": "BlazorMicrofrontends.Host",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/",
+      "BasePath": "_content/BlazorMicrofrontends.Host",
+      "RelativePath": "microfrontend-host#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "Server",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m1umsy9bue",
+      "Integrity": "mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/microfrontend-host.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "interop.i48w2iseca.js",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001069518717"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "934"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XbvrRTud+k72Mfxb0vrG8zatbYlvVPD6sgqE1b/ZTG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:21:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i48w2iseca"
+        },
+        {
+          "Name": "label",
+          "Value": "interop.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg="
+        }
+      ]
+    },
+    {
+      "Route": "interop.i48w2iseca.js",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:21:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i48w2iseca"
+        },
+        {
+          "Name": "label",
+          "Value": "interop.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg="
+        }
+      ]
+    },
+    {
+      "Route": "interop.i48w2iseca.js.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "934"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XbvrRTud+k72Mfxb0vrG8zatbYlvVPD6sgqE1b/ZTG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:21:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i48w2iseca"
+        },
+        {
+          "Name": "label",
+          "Value": "interop.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XbvrRTud+k72Mfxb0vrG8zatbYlvVPD6sgqE1b/ZTG8="
+        }
+      ]
+    },
+    {
+      "Route": "interop.js",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001069518717"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "934"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XbvrRTud+k72Mfxb0vrG8zatbYlvVPD6sgqE1b/ZTG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:21:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg="
+        }
+      ]
+    },
+    {
+      "Route": "interop.js",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/interop.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3045"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:21:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IvsK35ZrP6ZP45Vw1iivznsFiBtOiAAC07q4GrSSdpg="
+        }
+      ]
+    },
+    {
+      "Route": "interop.js.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/6gn4cylxf3-i48w2iseca.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "934"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XbvrRTud+k72Mfxb0vrG8zatbYlvVPD6sgqE1b/ZTG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:21:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XbvrRTud+k72Mfxb0vrG8zatbYlvVPD6sgqE1b/ZTG8="
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.css",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001893939394"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "527"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dGCWiLgW0lV3l+PT5Y5IzXeHzPZNvHH9NYD3dCrMhHM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:20:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4="
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.css",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:20:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4="
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.css.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dGCWiLgW0lV3l+PT5Y5IzXeHzPZNvHH9NYD3dCrMhHM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:20:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dGCWiLgW0lV3l+PT5Y5IzXeHzPZNvHH9NYD3dCrMhHM="
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.m1umsy9bue.css",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001893939394"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "527"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dGCWiLgW0lV3l+PT5Y5IzXeHzPZNvHH9NYD3dCrMhHM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:20:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1umsy9bue"
+        },
+        {
+          "Name": "label",
+          "Value": "microfrontend-host.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4="
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.m1umsy9bue.css",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/wwwroot/microfrontend-host.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1693"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:20:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1umsy9bue"
+        },
+        {
+          "Name": "label",
+          "Value": "microfrontend-host.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mvWBbAv2HF5jvYcbv0Acnw09LwiJcqO1DcnysXxrnN4="
+        }
+      ]
+    },
+    {
+      "Route": "microfrontend-host.m1umsy9bue.css.gz",
+      "AssetFile": "/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.Host/obj/Release/net9.0/compressed/avwaeqg3rl-m1umsy9bue.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dGCWiLgW0lV3l+PT5Y5IzXeHzPZNvHH9NYD3dCrMhHM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Apr 2025 21:20:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1umsy9bue"
+        },
+        {
+          "Name": "label",
+          "Value": "microfrontend-host.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dGCWiLgW0lV3l+PT5Y5IzXeHzPZNvHH9NYD3dCrMhHM="
+        }
+      ]
+    }
+  ]
+}

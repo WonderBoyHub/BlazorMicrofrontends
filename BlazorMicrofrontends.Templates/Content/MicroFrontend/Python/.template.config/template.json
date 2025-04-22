@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "BlazorMicrofrontends",
+  "classifications": [ "Web", "Python", "Microfrontend" ],
+  "identity": "BlazorMicrofrontends.MicroFrontend.Python",
+  "name": "Blazor Microfrontends: Python Microfrontend",
+  "shortName": "blazormfe-python",
+  "tags": {
+    "language": "Python",
+    "type": "project"
+  },
+  "sourceName": "PythonMicrofrontend",
+  "preferNameDirectory": true,
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "Flask",
+          "description": "Use Flask web framework"
+        },
+        {
+          "choice": "Django",
+          "description": "Use Django web framework"
+        }
+      ],
+      "defaultValue": "Flask",
+      "description": "The Python web framework to use"
+    },
+    "IncludeDatabase": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "description": "Whether to include database integration"
+    },
+    "DatabaseType": {
+      "type": "parameter",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "SQLite",
+          "description": "Use SQLite database"
+        },
+        {
+          "choice": "PostgreSQL",
+          "description": "Use PostgreSQL database"
+        }
+      ],
+      "defaultValue": "SQLite",
+      "description": "The database to use (if database integration is included)"
+    }
+  }
+} 

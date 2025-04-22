@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SampleMauiAppShell.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SampleMauiAppShell"
+    Shell.FlyoutBehavior="Flyout"
+    Title="SampleMauiAppShell">
+
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100" BackgroundColor="{StaticResource Primary}">
+            <Image Source="dotnet_bot.png" 
+                   HeightRequest="80" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" />
+            <Label Text="Blazor Microfrontends" 
+                   TextColor="White"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+                   Margin="0,0,0,10" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <ShellContent
+        Title="Home"
+        Icon="home.png"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <FlyoutItem Title="Microfrontends" Icon="apps.png">
+        <Tab Title="Device Info">
+            <ShellContent Title="Info" ContentTemplate="{DataTemplate local:BlazorPage}" Route="deviceinfo" />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Settings" Icon="settings.png">
+        <ShellContent ContentTemplate="{DataTemplate local:SettingsPage}" Route="settings" />
+    </FlyoutItem>
+
+</Shell> 

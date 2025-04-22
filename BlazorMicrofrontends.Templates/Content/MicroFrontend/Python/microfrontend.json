@@ -1,0 +1,16 @@
+{
+  "name": "PythonMicrofrontend",
+  "version": "1.0.0",
+  "description": "A Python microfrontend",
+  "displayName": "Python Microfrontend",
+  "author": "Your Name",
+  "entryPoint": "app.py",
+  "routes": [
+    {
+      "path": "python-microfrontend",
+      "title": "Python Microfrontend"
+    }
+  ],
+  "dependencies": [],
+  "environments": ["web"]
+} 

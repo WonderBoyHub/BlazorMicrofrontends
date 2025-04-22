@@ -1,0 +1,5 @@
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.CLI/obj/Release/net9.0/BlazorMicrofrontends.CLI.csproj.AssemblyReference.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.CLI/obj/Release/net9.0/BlazorMicrofrontends.CLI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.CLI/obj/Release/net9.0/BlazorMicrofrontends.CLI.AssemblyInfoInputs.cache
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.CLI/obj/Release/net9.0/BlazorMicrofrontends.CLI.AssemblyInfo.cs
+/Users/kevinsamuelhougesen/Fordybelsesspor/SDK/BlazorMicrofrontends.CLI/obj/Release/net9.0/BlazorMicrofrontends.CLI.csproj.CoreCompileInputs.cache
